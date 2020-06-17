@@ -1,0 +1,105 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Theinhardt-Regular;
+  src: url(Theinhardt-Regular.otf);
+}
+
+@font-face {
+  font-family: Theinhardt-Light;
+  src: url(Theinhardt-Light.otf);
+}
+
+@font-face {
+  font-family: Sirba-Bold;
+  src: url(Sirba-Bold.ttf);
+}
+
+body {
+  font-family: 'Open Sans', 'sans-serif';
+  background-color: #fff;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+.title {
+  font-size: 4vw;
+  font-family: Sirba-Bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+
+.grid-pane {
+}
+
+.grid-pane > .grid-item {
+    height: 280px;
+    text-align: center;
+    font-family: Theinhardt-Light;
+    font-size: 1em;
+    text-transform: uppercase;
+    position: static;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.grid-pane {
+  display: grid;
+  grid-template-columns:  repeat(6, 1fr)
+}
+
+@media (max-width: 1200px) {
+  .grid-pane { grid-template-columns: repeat(2, 1fr);}
+}
+
+@media (max-width: 600px) {
+  .grid-pane { grid-template-columns: repeat(1, 1fr);}
+}
+
+
+@media (max-width: 600px) {
+  .grid-pane .grid-item { height: 630px;}
+}
+
+#ticker-container {
+    background-color: black;
+    height:50px;
+}
+
+#ticker-text {
+    top:10px;
+    font-family: Sirba-Bold;
+    font-size: 30px;
+    color: white;
+/*    border:1px solid white;*/
+}
+
+/* .grid-item {
+  width: 400px;
+  height: 550px;
+  border: 1px solid black;
+  display: inline-block;
+} */
