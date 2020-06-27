@@ -25,7 +25,9 @@ body {
   background-color: #fff;
 }
 
-
+img{
+  height: 100%;
+}
 /* .title {
   width: 700px;
   font-size: 7vw;
