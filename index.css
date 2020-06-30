@@ -29,6 +29,11 @@ img{
   height: 100%;
   width: 100%;
 }
+
+audio{
+  display: none;
+}
+
 .title {
   font-size: 4vw;
   font-family: Sirba-Bold;
@@ -84,18 +89,7 @@ a:active {
   .grid-pane .grid-item { height: 630px;}
 }
 
-#ticker-container {
-    background-color: black;
-    height:50px;
-}
 
-#ticker-text {
-    top:10px;
-    font-family: Sirba-Bold;
-    font-size: 30px;
-    color: white;
-/*    border:1px solid white;*/
-}
 
 /* .grid-item {
   width: 400px;
